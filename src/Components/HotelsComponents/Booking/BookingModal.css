@@ -1,0 +1,197 @@
+/* Prevent scrolling of the body when modal is open */
+body.modal-open {
+  overflow: hidden;
+  /* filter: blur(5px); 
+  pointer-events: none;  */
+}
+
+
+
+
+
+.booking-modal-overlay {
+ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+ 
+}
+
+.booking-modal {
+  background: white;
+  border-radius: 10px;
+  width: 800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 90vh; 
+  overflow-y: auto; 
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  gap: 20px;
+}
+
+.left-section {
+  flex: 1;
+}
+
+.room-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.amenity-tag {
+  background: #eef;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.date-info label {
+  font-size: 14px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.persons-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.person-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gender-select {
+  display: flex;
+  gap: 10px;
+}
+
+.add-person {
+  background: none;
+  color: blue;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.book-button {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.date-info input[type="date"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* Remove Person Button */
+.remove-person {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 140px;
+}
+
+.remove-person:hover {
+  background-color: #d32f2f;
+}
+
+/* Clear Button */
+.clear-button {
+  background-color: #ff4107;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.clear-button:hover {
+  background-color: #e0a800;
+}
+
+.ninput{
+  width: 275px;
+  height: 30px;
+}
+.ainput{
+  width: 70px;
+  height: 30px;
+}
+
+@media (max-width: 750px) {
+ .modal-body{
+  flex-direction: column;
+ }
+ .modal-header h2{
+  font-size: 12px;
+ }
+  }
