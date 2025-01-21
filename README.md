@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# Front-End Assignment - GoComet India Pvt Ltd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the front-end assignment issued by GoComet India Pvt Ltd. The goal of this project is to build a responsive and interactive hotel booking application using a JavaScript framework like ReactJS or AngularJS, adhering to specific guidelines and requirements.
 
-## Available Scripts
+![Screenshot (90)](https://github.com/user-attachments/assets/35029cd9-3d51-4692-b29d-5b408d5ad139)
 
-In the project directory, you can run:
 
-### `npm start`
+#📝 Assignment Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application includes the following features:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Home Page
+Hero Section:
 
-### `npm test`
+![Screenshot (91)](https://github.com/user-attachments/assets/d4ac7f68-bb8d-4115-91ef-b2e019633cd2)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Users can search for hotels by name or city using the "Search Hotels" API.
+Selection of Check-in, Check-out dates, and Number of persons is required.
+A valid search redirects the user to the Hotels Page.
+Explore Hotels Section:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Displays a paginated list of hotels using the "Hotels List" API.
+Minimum and maximum room prices for each hotel are calculated dynamically.
+Includes a View button that navigates to the Hotel Details Page.
+Filters and Sort:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot (92)](https://github.com/user-attachments/assets/bec6c8c2-d02e-417b-b96e-209d1de2ddc9)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Implemented entirely on the frontend.
+Allows filtering and sorting the hotel list for a better user experience.
+Hotel Page
+Fetches detailed hotel and room data using the "Hotel Details" API.
+Displays amenities creatively via a View Facilities button.
+Provides a Book Now button that opens a booking modal.
+Booking Modal
+Prefills details if accessed via the Search functionality.
+Allows custom date and number of persons selection if accessed from the Explore section.
+Includes form validations and success feedback upon booking.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🚀 Features and Functionalities
+Responsive Design:
 
-## Learn More
+The application is optimized for mobile, tablet, and desktop views.
+Interactivity:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Hover and click effects are implemented for better user experience.
+Frontend-Handled Search & Filters:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Logic for search, filters, and sorting is implemented on the client side.
+Booking Flow:
 
-### Code Splitting
+Smooth navigation and user-friendly modals for hotel booking.
+Optimized and Scalable Code:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Adheres to coding standards, including indentation, comments, and naming conventions.
+Bug-Free Experience:
 
-### Analyzing the Bundle Size
+Ensures a robust and seamless user interaction.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+.
+🛠️ Tech Stack
+Frontend: ReactJS (preferred) or AngularJS
+Styling: CSS (without any UI libraries)
+API Integration: REST APIs
+Validation: Form validations for required fields and valid data entry
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📊 API Endpoints
+Search Hotels
 
-### Advanced Configuration
+Method: GET
+Endpoint: https://www.gocomet.com/api/assignment/hotels-name
+Hotels List
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Screenshot (93)](https://github.com/user-attachments/assets/05d8f8f1-a287-480d-b978-eca784f3f2af)
 
-### Deployment
+Method: GET
+Endpoint: https://www.gocomet.com/api/assignment/hotels
+Query Params:
+page: number (required)
+size: number (required)
+Hotel Details
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![Screenshot (94)](https://github.com/user-attachments/assets/e1914291-cb18-4f21-8eb3-d52ae2d5c85d)
 
-### `npm run build` fails to minify
+Method: GET
+Endpoint: https://www.gocomet.com/api/assignment/hotels/{hotel-id}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🛠️ How to Run
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/frontend-assignment.git
+cd frontend-assignment
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the development server:
+
+bash
+Copy
+Edit
+npm start
+Open the application in your browser:
+
+arduino
+Copy
+Edit
+http://localhost:3000
+📜 Project Structure
+plaintext
+Copy
+Edit
+src/
+├── assets/         # Logo, images, and icons
+├── components/     # Reusable UI components
+├── pages/          # Home, Hotel, and Booking pages
+├── styles/         # CSS files for styling
+├── utils/          # Helper functions (e.g., API calls, validations)
+├── App.js          # Main application file
+└── index.js        # Entry point
+🏅 Extra Points Achieved
+Bug-free implementation
+Responsive design across devices
+Clear and well-documented code
+Optimized and scalable logic
+
+
